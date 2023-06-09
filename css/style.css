@@ -1,0 +1,134 @@
+.card{
+    width: 180px;
+    border: 1px solid red;
+    margin: 0 auto;
+    background-color: black;
+    padding: 10px 0;
+    position: relative;
+}
+.red{
+    border: 1px solid wheat;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    animation: red 3s ease;
+}
+.yellow{
+    border: 1px solid wheat;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin: 5px;
+    animation: yellow 2s ease;
+    animation-delay: 3s;
+}
+.green{
+    border: 1px solid wheat;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+    animation: green 2s ease;
+    animation-delay: 5s;
+}
+@keyframes red{
+    0%,100%{
+        background-color: wheat;
+    }
+    50%{
+        background-color: red;
+    }
+}
+@keyframes yellow{
+    0%,100%{
+        background-color: wheat;
+    }
+    50%{
+        background-color: yellow;
+    }
+}
+@keyframes green{
+    0%,100%{
+        background-color: wheat;
+    }
+    50%{
+        background-color: green;
+    }
+}
+.card::after{
+    position: absolute;
+    content: '';
+    border-left: 10px solid red;
+    height: 80px;
+    bottom: -80px;
+    left: 85px;
+    animation: chopi 6s linear infinite;
+}
+@keyframes chopi{
+    0%,100%{
+        border-left: 10px solid black;
+    }
+    30%{
+        border-left: 10px solid red;
+    }
+    60%{
+        border-left: 10px solid yellow;
+    }
+    90%{
+        border-left: 10px solid green;
+    }
+}
+.way{
+    width: 150%;
+    height: 12vh;
+    background-color: grey;
+    margin-top: 0%;
+}
+.fa-car-side{
+    color: wheat;
+    font-style:300rem;
+    margin-left: 12%;
+    margin-top:1%;
+    animation: car 9s ease;
+    font-size: 3rem;
+    
+}
+@keyframes car{
+    0%{
+        margin-left: 2%;
+    }
+    30%{
+        margin-left: 2%;
+    }
+    60%{
+        margin-left: 30%;
+    }
+    100%{
+        margin-left: 100%;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
